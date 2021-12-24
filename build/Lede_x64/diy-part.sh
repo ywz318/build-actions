@@ -8,9 +8,9 @@
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
 src-git helloworld https://github.com/fw876/helloworld
-src-git aliddns https://github.com/honwen/luci-app-aliddns.git
-src-git poweroff https://github.com/esirplayground/luci-app-poweroff
-src-git autotimeset https://github.com/sirpdboy/luci-app-autotimeset
+src-git luci-app-aliddns https://github.com/honwen/luci-app-aliddns.git
+src-git luci-app-poweroff https://github.com/esirplayground/luci-app-poweroff
+src-git luci-app-autotimeset https://github.com/sirpdboy/luci-app-autotimeset
 
 
 cat >$NETIP <<-EOF
