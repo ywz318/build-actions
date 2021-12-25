@@ -22,7 +22,7 @@ uci set network.lan.netmask='255.255.255.0'                                 # IP
 uci commit network                                                          # 不要删除跟注释,除非上面全部删除或注释掉了
 #uci set dhcp.lan.ignore='1'                                                 # 关闭DHCP功能
 #uci commit dhcp                                                             # 跟‘关闭DHCP功能’联动,同时启用或者删除跟注释
-uci set system.@system[0].hostname='Fred's OpenWrt'                            # 修改主机名称为OpenWrt-123
+uci set system.@system[0].hostname='Fred's_OpenWrt'                            # 修改主机名称为OpenWrt-123
 #sed -i 's/\/bin\/login/\/bin\/login -f root/' /etc/config/ttyd              # 设置ttyd免帐号登录，如若开启，进入OPENWRT后可能要重启一次才生效
 EOF
 
@@ -44,14 +44,14 @@ EOF
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `grep "aMule设置" -rl ./`
 sed -i 's/"网络存储"/"NAS"/g' `grep "网络存储" -rl ./`
-sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `grep "Turbo ACC 网络加速" -rl ./`
-sed -i 's/"实时流量监测"/"流量"/g' `grep "实时流量监测" -rl ./`
-sed -i 's/"KMS 服务器"/"KMS激活"/g' `grep "KMS 服务器" -rl ./`
-sed -i 's/"TTYD 终端"/"命令窗"/g' `grep "TTYD 终端" -rl ./`
+#sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `grep "Turbo ACC 网络加速" -rl ./`
+#sed -i 's/"实时流量监测"/"流量"/g' `grep "实时流量监测" -rl ./`
+#sed -i 's/"KMS 服务器"/"KMS激活"/g' `grep "KMS 服务器" -rl ./`
+#sed -i 's/"TTYD 终端"/"命令窗"/g' `grep "TTYD 终端" -rl ./`
 sed -i 's/"USB 打印服务器"/"打印服务"/g' `grep "USB 打印服务器" -rl ./`
-sed -i 's/"Web 管理"/"Web"/g' `grep "Web 管理" -rl ./`
-sed -i 's/"管理权"/"改密码"/g' `grep "管理权" -rl ./`
-sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
+#sed -i 's/"Web 管理"/"Web"/g' `grep "Web 管理" -rl ./`
+#sed -i 's/"管理权"/"改密码"/g' `grep "管理权" -rl ./`
+#sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl ./`
 
 
