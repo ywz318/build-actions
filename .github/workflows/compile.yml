@@ -16,7 +16,7 @@ on:
     branches:
       - main
     paths:
-      - 'build/Lede_x64/start-up/start'
+      - 'config'
 
 env:
   Github: https://github.com/${{github.repository}}
