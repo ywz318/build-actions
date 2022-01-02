@@ -29,6 +29,7 @@ sed -i "s/OpenWrt /Fred compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $
 
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ                                                             # 设置密码为空
 
+sed -i 's/PATCHVER:=5.4/PATCHVER:=5.4/g' target/linux/x86/Makefile
 #sed -i 's/PATCHVER:=5.4/PATCHVER:=5.10/g' target/linux/x86/Makefile                               # x86机型,默认内核5.4，修改内核为5.10
 
 # K3专用，编译K3的时候只会出K3固件
@@ -55,12 +56,12 @@ sed -i 's/"USB 打印服务器"/"打印服务"/g' `grep "USB 打印服务器" -r
 
 
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间
-cat >${GITHUB_WORKSPACE}/Clear <<-EOF
-rm -rf config.buildinfo
-rm -rf feeds.buildinfo
-rm -rf openwrt-x86-64-generic-kernel.bin
-rm -rf openwrt-x86-64-generic.manifest
-rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
-rm -rf sha256sums
-rm -rf version.buildinfo
-EOF
+#cat >${GITHUB_WORKSPACE}/Clear <<-EOF
+#rm -rf config.buildinfo
+#rm -rf feeds.buildinfo
+#rm -rf openwrt-x86-64-generic-kernel.bin
+#rm -rf openwrt-x86-64-generic.manifest
+#rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
+#rm -rf sha256sums
+#rm -rf version.buildinfo
+#EOF
