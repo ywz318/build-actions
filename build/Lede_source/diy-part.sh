@@ -8,7 +8,7 @@
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
 
-git clone https://github.com//helloworld package/luci-app-ssr-plus
+#git clone https://github.com//helloworld package/luci-app-ssr-plus
 
 
 cat >$NETIP <<-EOF
